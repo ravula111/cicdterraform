@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = ""
-  secret_key = ""
+  access_key = "AKIA2CWFMGPYFW2XIJGA"
+  secret_key = "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"
 }
 
 terraform {
@@ -14,5 +14,5 @@ terraform {
   }
 }
 resource "aws_iam_user" "my_iam_user" {
-  name = "ramana_1"
+  name = "anand"
 }
