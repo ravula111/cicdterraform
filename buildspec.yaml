@@ -7,15 +7,16 @@ phases:
      - "wget https://releases.hashicorp.com/terraform/1.2.9/terraform_1.2.9_linux_arm64.zip"
      - "unzip terraform_1.2.9_linux_arm64.zip"
      - "mv terraform /usr/local/bin"
-    pre_build:
+
+  pre_build:
       commands:
        - terraform init
     
-    build:
+  build:
       commands:
        - terraform $TF_COMMAND -auto-approve
     
-    post_build:
+  post_build:
       commands:
        - echo terraform $TF_COMMAND completed
   
